@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# Web-interface for interaction between your Bluetooth-compatible device and LEGO® SPIKE Prime Hub.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A boilerplate for connecting LEGO® SPIKE Prime Hub to your website using Bluetooth Low Energy (BLE)
 
-Currently, two official plugins are available:
+This boilerplate shows how to connect/disconnect to a hub, start/stop a programm, send a message to hub, process it there, send a message from hub, process it on the website. It also shows how to set up an event listener structure. It is not 100% robust. There are some cases when it fails, but I couldn't replicate it. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Quick Start
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v16 or higher)
+- LEGO® SPIKE Prime Hub
+- Modern web browser with BLE support
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Installation
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+# Clone the repository
+git clone https://github.com/slavasg-lab/ml-with-bricks.git
+
+# Navigate to project directory
+cd ml-with-bricks
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
+The application will be available at `http://localhost:5173`
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⭐ Show Your Support!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+If you find this project helpful or interesting, please consider giving it a star on GitHub! **Your support may help my career!** Thank you!
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 👥 Credits
+
+Thanks **LEGO** for leaving an example of connection using BLE in Python: https://github.com/LEGO/spike-prime-docs/tree/main/examples/python
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## ⚖️ Disclaimer
+
+LEGO® and SPIKE™ are registered trademarks of the LEGO Group, which does not sponsor, authorize or endorse this software.
