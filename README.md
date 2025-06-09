@@ -15,7 +15,7 @@ This boilerplate shows how to connect/disconnect to a hub, start/stop a programm
 
 ```bash
 # Clone the repository
-git clone https://github.com/slavasg-lab/ml-with-bricks.git
+git clone https://github.com/slavasg-lab/lego-spikeprime-ble-boilerplate.git
 
 # Navigate to project directory
 cd ml-with-bricks
